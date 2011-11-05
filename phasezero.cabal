@@ -43,15 +43,19 @@ Build-type:          Simple
 -- Extra-source-files:  
 
 -- Constraint on the version of Cabal needed to build this package.
-Cabal-version:       >=1.2
+Cabal-version:       >=1.4
 
 
 Executable phasezero
   -- .hs or .lhs file containing the Main module.
-  -- Main-is:             
+  Main-is:             Main.hs
   
   -- Packages needed in order to build this package.
-  -- Build-depends:       
+  Build-depends:       base >= 4.2,
+                       bzlib >= 0.5,
+                       HStringTemplate >= 0.6,
+                       tar >= 0.3,
+                       zlib >= 0.5
   
   -- Modules not exported by this package.
   -- Other-modules:       
