@@ -52,8 +52,10 @@ Executable phasezero
   
   -- Packages needed in order to build this package.
   Build-depends:       base >= 4.2,
+                       bytestring >= 0.9,
                        bzlib >= 0.5,
                        directory >= 1.0,
+                       filepath >= 1.1,
                        HStringTemplate >= 0.6,
                        tar >= 0.3,
                        temporary >= 1.1,
