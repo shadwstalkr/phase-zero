@@ -8,6 +8,7 @@ import Control.Monad.Trans
 import qualified Data.ConfigFile as CP
 import qualified Data.Map as Map
 import qualified Data.Text as Txt
+import qualified Data.Text.IO as TxtIo
 import System.Directory
 import System.FilePath
 import System.IO
@@ -39,5 +40,5 @@ query :: Variables -> (String, String) -> IO Variables
 query vars (name, prompt) = do
   putStr $ prompt ++ "? "
   hFlush stdout
-  value <- fmap Txt.pack getLine
+  value <- TxtIo.getLine
   return $ Map.insert name value vars

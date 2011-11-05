@@ -57,6 +57,7 @@ Executable phasezero
                        ConfigFile >= 1.0,
                        containers >= 0.3,
                        directory >= 1.0,
+                       enumerator >= 0.4.15,
                        filepath >= 1.1,
                        HStringTemplate >= 0.6,
                        mtl >= 1.1,
